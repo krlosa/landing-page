@@ -1,15 +1,31 @@
 /* #region page */
-html {
+.page {
   font-family: poppins, sans-serif;
   color: #ffffff;
   line-height: 140%;
   font-size: 16px;
   background-color: #1d1d1d;
+  scroll-behavior: smooth;
 }
 
-body {
+.page__corpo {
   margin: 0;
 }
+
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /* #endregion */
 
 /* #region cabecalho */
@@ -46,6 +62,62 @@ body {
 }
 /* #endregion */
 
+/* #region menu lateral*/
+.menu--lateral {
+  padding: 24px 20px 40px;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #c2c2c2;
+  color: #1d1d1d;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu--lateral__cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu--lateral__lista {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 40px 0;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  gap: 32px;
+}
+
+.menu--lateral__rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.menu--lateral__link {
+  text-decoration: none;
+}
+
+.menu--lateral__link:visited {
+  color: inherit;
+}
+
+.menu--lateral__rodape a:last-child {
+  border-bottom: 2px solid #1d1d1d;
+  padding-bottom: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+/* #endregion*/
+
 /* #region icones */
 .icone {
   display: block;
@@ -60,12 +132,28 @@ body {
 .icone--menu {
   background-image: url(./imagens/icones/icone-menu.png);
 }
+
+.icone--fechar {
+  background-image: url(./imagens/icones/menu-close-button.png);
+}
 /* #endregion */
 
 /* #region conteudo */
 
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .principal__subtitulo {
   font-size: 32px;
   font-weight: medium;
+}
+
+.move-free__texto {
+  font-size: 23px;
+  text-align: left;
+  margin: 10px 0;
 }
 /* #endregion*/

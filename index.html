@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>MyBIKE</title>
   </head>
-  <body>
-    <header class="cabecalho">
+  <body class="page__corpo">
+    <header class="cabecalho" id="cabecalho">
       <div class="cabecalho__superior">
         <a href="#">
           <img src="./imagens/MyBIKE-logo.png" alt="MyBIKE logo" class="logo" />
         </a>
 
         <div class="cabecalho__superior__icones">
-          <a href="#" class="icone icone--telefone"></a>
+          <a href="tel:+1 234 5555-55-55" class="icone icone--telefone"></a>
 
-          <a href="#" class="icone icone--menu"></a>
+          <a href="#menu" class="icone icone--menu"></a>
         </div>
       </div>
 
@@ -25,26 +25,73 @@
       </div>
     </header>
 
-    <aside class="menu-lateral"></aside>
+    <aside class="menu--lateral page__menu" id="menu">
+      <div class="menu--lateral__cabecalho">
+        <a href="#cabecalho"
+          ><img
+            src="./imagens/MyBIKE-menu-logo.png"
+            alt="MyBIKE-logo"
+            class="logo"
+        /></a>
+        <a href="#cabecalho" class="icone icone--fechar"></a>
+      </div>
+
+      <nav class="menu--lateral__itens">
+        <ul class="menu--lateral__lista">
+          <li class="menu--lateral__lista__item">
+            <a class="menu--lateral__link" href="#cabecalho">Home</a>
+          </li>
+          <li class="menu--lateral__lista__item">
+            <a class="menu--lateral__link" href="#about-us">About Us</a>
+          </li>
+          <li class="menu--lateral__lista__item">
+            <a class="menu--lateral__link" href="#compare-bikes">Compare Bikes</a>
+          </li>
+          <li class="menu--lateral__lista__item">
+            <a class="menu--lateral__link" href="#details">Details</a>
+          </li>
+          <li class="menu--lateral__lista__item">
+            <a class="menu--lateral__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu--lateral__rodape">
+        <a class="menu--lateral__link" href="tel:+1 234 5555-55-55">+1 234 5555-55-55</a>
+        <a class="menu--lateral__link" href="#">Book a test ride</a>
+      </div>
+    </aside>
 
     <main class="principal">
-      <section class="move-free">
+      <section class="move-free" id="about-us">
         <h2 class="move-free__subtitulo principal__subtitulo">Move Free</h2>
+        <p class="move-free__texto principal__texto">Shift your ride,</p>
         <p class="move-free__texto principal__texto">
-          Shift your ride, not gears. Find the fastest way to move in the city
-          as the bike adapts intuitively to power the speed you need.
+          not gears. Find the fastest
+        </p>
+        <p class="move-free__texto principal__texto">way to move in the city</p>
+        <p class="move-free__texto principal__texto">as the bike adapts</p>
+        <p class="move-free__texto principal__texto">
+          intuitively to power the
+        </p>
+        <p class="move-free__texto principal__texto">speed you need.</p>
+      </section>
+
+      <section class="compare-bikes" id="compare-bikes">
+        <h2 class="principal__subtitulo">Compare bikes</h2>
+        <img src="./imagens/sporty-4.png" alt="sporty 4 bike" />
+        <h3 class="compare-bikes__nome-bike">Sporty 4</h3>
+        <p class="compare-bikes__descricap-bike">
+          The iconic frame brought to a new performance height as a sporty,
+          active ride.
         </p>
       </section>
 
-      <section class="compare-bikes">
-        <h2 class="principal__subtitulo">Compare bikes</h2>
-      </section>
-
-      <section class="the-details">
+      <section class="the-details" id="details">
         <h2 class="principal__subtitulo">The details</h2>
       </section>
 
-      <section class="contact-us">
+      <section class="contact-us" id="contact">
         <h2 class="principal__subtitulo">Contact us</h2>
       </section>
     </main>
