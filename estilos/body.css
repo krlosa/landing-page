@@ -1,0 +1,51 @@
+/* #region conteudo */
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal__subtitulo {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.principal__bloco {
+  padding: 0 20px;
+}
+
+.principal__sessao {
+  display: flex;
+  flex-direction: column;
+  margin-top: 92px;
+}
+
+.destaque {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* #endregion*/
+
+/* #region move-free */
+.move-free {
+  margin-top: 60px;
+}
+
+.move-free__texto {
+  font-size: 23px;
+}
+/* #endregion */
+
+/* #region compare-bikes*/
+
+/* #endregion */
+
+/* #region the-details */
+.details__imagens {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* #endregion */

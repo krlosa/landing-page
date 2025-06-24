@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="style.css" />
     <title>MyBIKE</title>
   </head>
+
   <body class="page__corpo">
-    <header class="cabecalho" id="cabecalho">
+    <header class="cabecalho menu" id="cabecalho">
       <div class="cabecalho__superior">
         <a href="#">
-          <img src="./imagens/MyBiKE-logo.png" alt="MyBIKE logo" class="logo" />
+          <img
+            src="./imagens/320/MyBiKE-logo-320.png"
+            alt="MyBIKE logo"
+            class="logo"
+          />
         </a>
 
         <div class="cabecalho__superior__icones">
@@ -25,11 +30,11 @@
       </div>
     </header>
 
-    <aside class="menu--lateral page__menu" id="menu">
+    <aside class="menu--lateral menu page__menu" id="menu">
       <div class="menu--lateral__cabecalho">
         <a href="#cabecalho"
           ><img
-            src="./imagens/MyBIKE-menu-logo.png"
+            src="./imagens/320/MyBIKE-menu-logo-320.png"
             alt="MyBIKE-logo"
             class="logo"
         /></a>
@@ -67,35 +72,78 @@
     </aside>
 
     <main class="principal">
-      <section class="move-free" id="about-us">
+      <section class="principal__sessao" id="about-us">
         <h2 class="move-free__subtitulo principal__subtitulo">Move Free</h2>
-        <p class="move-free__texto principal__texto">Shift your ride,</p>
-        <p class="move-free__texto principal__texto">
-          not gears. Find the fastest
+        <p class="move-free__texto">
+          Shift your ride,<br />
+          not gears. Find the fastest<br />
+          way to move in the city<br />
+          as the bike adapts<br />
+          intuitively to power the<br />
+          speed you need.
         </p>
-        <p class="move-free__texto principal__texto">way to move in the city</p>
-        <p class="move-free__texto principal__texto">as the bike adapts</p>
-        <p class="move-free__texto principal__texto">
-          intuitively to power the
-        </p>
-        <p class="move-free__texto principal__texto">speed you need.</p>
       </section>
 
-      <section class="compare-bikes" id="compare-bikes">
+      <section class="principal__sessao" id="compare-bikes">
         <h2 class="principal__subtitulo">Compare bikes</h2>
-        <img src="./imagens/sporty-4.png" alt="sporty 4 bike" />
-        <h3 class="compare-bikes__nome-bike">Sporty 4</h3>
-        <p class="compare-bikes__descricap-bike">
-          The iconic frame brought to a new performance height as a sporty,
-          active ride.
-        </p>
+        <div class="principal__bloco">
+          <img src="./imagens/320/sporty-4.png" alt="sporty 4 bike" />
+          <h3 class="destaque">Sporty 4</h3>
+          <p class="compare-bikes__descricao">
+            The iconic frame brought to a new performance height as a sporty,<br />
+            active ride.
+          </p>
+          <p class="destaque">$ 2 590</p>
+        </div>
+        <div class="principal__bloco">
+          <img src="./imagens/320/ride-in-town.png" alt="sporty 4 bike" />
+          <h3 class="destaque">Ride in town ST</h3>
+          <p class="compare-bikes__descricao">
+            An open frame for an upright<br />
+            riding position as the most<br />
+            comfortable ride in town.
+          </p>
+          <p class="destaque">$ 2 590</p>
+        </div>
+        <div class="principal__bloco">
+          <img src="./imagens/320/agile-ride-3.png" alt="sporty 4 bike" />
+          <h3 class="destaque">Agile ride 3</h3>
+          <p class="compare-bikes__descricao">
+            The lightweight frame that has<br />
+            earned its street tread as a sleek,<br />
+            agile ride.
+          </p>
+          <p class="destaque">$ 2 090</p>
+        </div>
       </section>
 
-      <section class="the-details" id="details">
-        <h2 class="principal__subtitulo">The details</h2>
+      <section class="principal__sessao" id="details">
+        <h2 class="principal__subtitulo">The Details</h2>
+        <div class="principal__bloco">
+          <div class="details__imagens">
+            <img
+              class="details__img"
+              src="./imagens/320/details-1.png"
+              alt="Suporte para celular frontal"
+            />
+            <img
+              class="details__img"
+              src="./imagens/320/details-2.png"
+              alt="Suporte para celular traseiro"
+            />
+          </div>
+          <h3 class="destaque">Auto Unlock</h3>
+          <p>
+            The app senses when you're<br> 
+            nearby to unlock automatically.<br>
+            GPS tracking so you know where<br>
+            your bike is and can track it<br>
+            anytime.
+          </p>
+        </div>
       </section>
 
-      <section class="contact-us" id="contact">
+      <section class="principal__sessao" id="contact">
         <h2 class="principal__subtitulo">Contact us</h2>
       </section>
     </main>
