@@ -1,0 +1,106 @@
+/* #region mixins */
+@mixin text {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  box-sizing: border-box;
+}
+/* #endregion*/
+
+/* #region conteudo */
+.principal {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+
+  &__subtitulo {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__bloco {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  &__sessao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 92px;
+  }
+}
+
+.destaque {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* #endregion*/
+
+/* #region move-free */
+.move-free {
+  margin-top: 60px;
+
+  &__texto {
+    font-size: 23px;
+  }
+}
+
+.center {
+  padding: 20px;
+}
+
+/* #endregion */
+
+/* #region compare-bikes*/
+
+/* #endregion */
+
+/* #region the-details */
+.details__imagens {
+  display: flex;
+  gap: 20px;
+}
+
+/* #endregion */
+
+/* #region buttons */
+.button {
+  display: inline-block;
+  justify-self: center;
+  background-color: #ffffff;
+  color: #1d1d1d;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  line-height: 56px;
+
+  width: 278px;
+  height: 56px;
+  padding: 0;
+}
+/* #endregion */
+
+/* #region Contact */
+.form {
+  padding: 20px;
+}
+
+.contato {
+  display: grid;
+  gap: 16px;
+
+  &__label > &__input {
+    @include text;
+    height: 48px;
+    border-radius: 50px;
+  }
+
+  &__message {
+    @include text;
+    height: 148px;
+    border-radius: 16px;
+  }
+}
+/* #endregion */
