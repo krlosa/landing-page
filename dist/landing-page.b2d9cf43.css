@@ -1,0 +1,263 @@
+.principal {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  display: grid;
+}
+
+.principal__subtitulo {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.principal__bloco {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.principal__sessao {
+  flex-direction: column;
+  margin-top: 92px;
+  display: flex;
+}
+
+.destaque {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.move-free {
+  margin-top: 60px;
+}
+
+.move-free__texto {
+  font-size: 23px;
+}
+
+.center {
+  padding: 20px;
+}
+
+.details__imagens {
+  gap: 20px;
+  display: flex;
+}
+
+.button {
+  color: #1d1d1d;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50px;
+  justify-self: center;
+  width: 278px;
+  height: 56px;
+  padding: 0;
+  font-weight: bold;
+  line-height: 56px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.form {
+  padding: 20px;
+}
+
+.contato {
+  gap: 16px;
+  display: grid;
+}
+
+.contato__label > .contato__input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+}
+
+.contato__message {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 16px;
+  width: 100%;
+  height: 148px;
+  padding: 14px 16px;
+}
+
+.bloco-contato {
+  padding: 20px;
+}
+
+.bloco-contato__titulo {
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bloco-contato__texto {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: medium;
+  letter-spacing: 0;
+}
+
+.bloco-contato__imagem {
+  background-image: url("rodape-imagem.d94f09bc.png");
+  background-position: 100%;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.page {
+  color: #fff;
+  scroll-behavior: smooth;
+  background-color: #1d1d1d;
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.page__corpo {
+  margin: 0;
+}
+
+.page__menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+}
+
+.menu {
+  box-sizing: border-box;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+.cabecalho {
+  text-align: center;
+  background-image: url("cover-photo-320.a482b398.png");
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+  padding: 24px 20px 40px;
+}
+
+.cabecalho__superior {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.cabecalho__superior__icones {
+  gap: 24px;
+  display: flex;
+}
+
+.cabecalho__titulo {
+  letter-spacing: -1.5px;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.logo {
+  transition: transform .3s;
+  display: flex;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.menu--lateral {
+  color: #1d1d1d;
+  text-transform: uppercase;
+  background-color: #c2c2c2;
+  font-weight: 600;
+}
+
+.menu--lateral__cabecalho {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.menu--lateral__lista {
+  letter-spacing: 2px;
+  flex-direction: column;
+  gap: 32px;
+  margin: 24px 0 40px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 22px;
+  list-style: none;
+  display: flex;
+}
+
+.menu--lateral__rodape {
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+}
+
+.menu--lateral__rodape a:last-child {
+  border-bottom: 2px solid #1d1d1d;
+  width: fit-content;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.menu--lateral__link {
+  text-decoration: none;
+}
+
+.menu--lateral__link:visited {
+  color: inherit;
+}
+
+.icone {
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  transition: transform .3s;
+  display: block;
+}
+
+.icone:hover {
+  transform: scale(1.2);
+}
+
+.icone--telefone {
+  background-image: url("icone-telefone.36ced561.png");
+}
+
+.icone--menu {
+  background-image: url("icone-menu.cb8eba78.png");
+  transition: background-image .3s;
+}
+
+.icone--menu:hover {
+  background-image: url("icone-menu-hover.3539a1d5.png");
+}
+
+.icone--fechar {
+  background-image: url("menu-close-button.922faccc.png");
+}
+/*# sourceMappingURL=landing-page.b2d9cf43.css.map */
